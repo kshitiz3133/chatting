@@ -1,6 +1,6 @@
 # Minimal Chatting App
 
-A neat and simple interesting chatting app
+A neat and simple yet interesting chatting app
 
 # Image Samples
 
