@@ -37,7 +37,7 @@ class _ChatState extends State<Chat> {
                   height: MediaQuery.of(context).size.height - 220,
                   width: MediaQuery.of(context).size.width - 10,
                     color: Colors.transparent,
-                    child: Switcher()),
+                    child: buildUserList()),
                 ),
               ),
           ],

@@ -24,7 +24,7 @@ class _MyCircularContainerState extends State<MyCircularContainer>
     _controller2 = AnimationController(
         vsync: this, duration: Duration(seconds: 1));
     _controller3 = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 200))..forward();
+        vsync: this, duration: Duration(milliseconds: 400))..forward();
     _opacity1=Tween(begin: 1.0,end: 0.0).animate(_controller2);
     Future.delayed(Duration(milliseconds: 900), () {
       setState(() {

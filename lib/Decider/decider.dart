@@ -22,7 +22,7 @@ class _DeciderState extends State<Decider> with TickerProviderStateMixin{
     super.initState();
     _controller = AnimationController(
         vsync: this, duration: Duration(milliseconds: 400))..forward();
-    _opacity=Tween(begin: 0.0,end: 1.0).animate(CurvedAnimation(parent: _controller, curve: Curves.easeIn));
+    _opacity=Tween(begin: 0.0,end: 1.0).animate(CurvedAnimation(parent: _controller, curve: Curves.linear));
   }
 
 

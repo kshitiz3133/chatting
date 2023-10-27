@@ -14,6 +14,7 @@ class buildUserList extends StatefulWidget {
 
 class _buildUserListState extends State<buildUserList> {
   final Switcher switching= new Switcher();
+  final myscrollcontroller=ScrollController();
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(stream: FirebaseFirestore.instance.collection('users').snapshots(),
@@ -23,6 +24,7 @@ class _buildUserListState extends State<buildUserList> {
       }
       if (snapshot.hasData) {
         return ListView(
+          controller: myscrollcontroller,
           children: snapshot.data!.docs
               .map<Widget>((doc) => _buildUserListItem(doc))
               .toList(),
@@ -41,12 +43,15 @@ class _buildUserListState extends State<buildUserList> {
     if(FirebaseAuth.instance.currentUser!.email != data['email']){
       return GestureDetector(
         onTap: (){
+          Navigator.push(context,
+              PageRouteBuilder(pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) { return ChatRoom(recieverUserEmail: data['email'],recieverUserId: data['uid'],);}));
+          /*Switcher s1= Switcher();
           setState(() {
-            switching.a=1;
+            s1.updater();
           });
           print(switching.a);
           print('hehe');
-          print('lul');
+          print('lul');*/
         },
         child: Row(
           children: [

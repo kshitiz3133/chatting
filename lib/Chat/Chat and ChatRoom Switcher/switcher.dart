@@ -14,11 +14,8 @@ class Switcher extends StatelessWidget {
   }
 
   void updater() {
-    _pageController1.animateToPage(
-      1,
-      duration: Duration(seconds: 1),
-      curve: Curves.linear,
-    );
+      print('wow');
+      _pageController1.animateToPage(1, duration: Duration(seconds: 1), curve: Curves.linear,);
   }
 
   @override
@@ -27,7 +24,7 @@ class Switcher extends StatelessWidget {
       controller: _pageController1,
       children: [
         buildUserList(),
-        ChatRoom(),
+        //ChatRoom(),
       ],
     );
   }
