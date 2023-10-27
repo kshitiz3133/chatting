@@ -1,16 +1,10 @@
-# chatting
+# Minimal Chatting App
 
-A new Flutter project.
+A neat and simple yet interesting chatting app
 
-## Getting Started
+# Image Samples
 
-This project is a starting point for a Flutter application.
+![278670197-a9aad6d8-7f9e-4349-ba36-8f51b8ace25b](https://github.com/kshitiz3133/chatting/assets/126540363/605fa833-3e29-495e-bb7d-f1935cf86c83)
+![278670163-39912338-eeac-4238-ba27-0985d70a42d1](https://github.com/kshitiz3133/chatting/assets/126540363/8a04c7f2-49e3-40c5-9526-10b1ca507882)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
