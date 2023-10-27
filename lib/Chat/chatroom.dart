@@ -128,7 +128,7 @@ class _ChatRoomState extends State<ChatRoom> {
                     width: 1.0, // Increase the outline thickness
                   ),
                 ),
-                hintText: 'Password',
+                hintText: 'Enter a message',
                 hintStyle: TextStyle(color: Colors.black),
               ),
             ),
