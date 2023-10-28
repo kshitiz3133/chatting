@@ -111,7 +111,7 @@ class _ChatRoomState extends State<ChatRoom> {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(8,0,0,8),
             child: TextField(
-              obscureText: true,
+              obscureText: false,
               controller: _messageController,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
