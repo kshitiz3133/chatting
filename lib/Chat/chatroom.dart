@@ -4,6 +4,8 @@ import 'package:chatting/Decider/decider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+
 
 class ChatRoom extends StatefulWidget {
   final String recieverUserEmail;
@@ -86,7 +88,9 @@ class _ChatRoomState extends State<ChatRoom> {
     var alignment = (data['senderId'] == _firebaseAuth.currentUser!.uid)
         ? Alignment.centerRight
         : Alignment.centerLeft;
-
+    Timestamp timestamp = data['timestamp'];
+    DateTime dateTime = timestamp.toDate();
+    String formattedDateTime = DateFormat('MMM dd, yyyy hh:mm a').format(dateTime);
     return Container(
       alignment: alignment,
       child: Padding(
@@ -96,6 +100,7 @@ class _ChatRoomState extends State<ChatRoom> {
           mainAxisAlignment: (data['senderId']==_firebaseAuth.currentUser!.uid)?MainAxisAlignment.end:MainAxisAlignment.start,
           children: [
             Text(data['senderEmail']),
+            Text(formattedDateTime,style: TextStyle(fontSize: 10),),
             ChatBubble(message:data['message']),
           ],
         ),
