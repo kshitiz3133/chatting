@@ -55,7 +55,25 @@ class _HomeaState extends State<Homea> {
               ],
             ),
             SizedBox(height: 20,),
-
+            Row(
+              children: [
+                SizedBox(width: 20,),
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(image: NetworkImage('https:$ico'),fit: BoxFit.contain)
+                  ),
+                ),
+                SizedBox(width: 10,),
+                Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(con,style: TextStyle(color: Colors.white,fontSize: 30),),
+                    Text('${temp.toInt().toString()}°C',style: TextStyle(color: Colors.white,fontSize: 25),),
+                  ],
+                ),
+              ],
+            )
             //Fact(),
             //this is for apicall
           ],
