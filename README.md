@@ -12,3 +12,7 @@ A neat and simple yet interesting chatting app
 
 https://github.com/kshitiz3133/chatting/assets/126540363/dd8c8cd1-53eb-4e8f-841e-27a461247ccf
 
+# LinkedIn 
+
+https://www.linkedin.com/in/kshitiz3133/
+
